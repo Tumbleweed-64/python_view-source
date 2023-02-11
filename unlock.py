@@ -1,0 +1,10 @@
+import requests
+URL = input("Enter the URL of the page you want to see the code for: ")
+print("\n")
+page = requests.get(URL)
+print(page.text)
+# f = open("page.html", mode="x")
+# f.close()
+# f = open("page.html", mode="a")
+# f.write(page.text)
+# f.close()
